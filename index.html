@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAB - Forest Abandoned Bamboo | 内成棚田と竹林再生の未来</title>
-  <meta name="description" content="大分県別府市・内成棚田の魅力を発信。アソビLABとAPU生が取り組む放置竹林再生と、美しい日本の原風景を未来へつなぐプロジェクト。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>FAB — Forest Abandoned Bamboo | 内成棚田 × アソビLAB × APU</title>
+  <meta name="description" content="大分県別府市・内成棚田。日本の棚田百選の絶景を守り、放置竹林をアソビと感動へと還流するアソビLABとAPU生のプロジェクト。">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -22,15 +19,15 @@
         <span class="logo-main">FAB</span>
         <span class="logo-sub">Forest Abandoned Bamboo</span>
       </a>
-      <button class="hamburger" aria-label="メニューを開く">
+      <button class="hamburger" aria-label="メニュー">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <nav class="site-nav">
         <ul>
-          <li><a href="index.html" class="active">ホーム</a></li>
-          <li><a href="about.html">内成棚田とは</a></li>
+          <li><a href="index.html" class="active">TOP</a></li>
+          <li><a href="about.html">内成棚田</a></li>
           <li><a href="bamboo.html">竹林再生活動</a></li>
           <li><a href="events.html">イベント予定</a></li>
           <li><a href="access.html">アクセス</a></li>
@@ -40,196 +37,233 @@
     </div>
   </header>
 
-  <!-- Hero Section with Slideshow -->
-  <section class="hero-section">
-    <div class="hero-slideshow">
-      <div class="slide active" style="background-image: url('images/seasons/autumn.png');"></div>
-      <div class="slide" style="background-image: url('images/bamboo/lanterns.png');"></div>
-      <div class="slide" style="background-image: url('images/seasons/spring.png');"></div>
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content fade-in">
-      <span class="hero-subtitle">大分県別府市 内成棚田 × アソビLAB × APU生</span>
-      <h1 class="hero-title">竹から、棚田の未来を灯す。<br>放置竹林を、地域の希望へ。</h1>
-      <p style="margin-bottom: 2rem; font-size: 1.1rem; opacity: 0.95;">千年以上続く石垣の美しさと、竹林再生活動から生まれる新しいコミュニティの物語。</p>
-      <div class="hero-cta-group">
-        <a href="events.html" class="btn btn-accent pulse-badge">10/24 竹あかりイベント参加受付中！</a>
-        <a href="bamboo.html" class="btn btn-secondary" style="background: rgba(255,255,255,0.2); color:#fff; border:1px solid rgba(255,255,255,0.4);">竹林活動を見る</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Divider SVG -->
-  <div class="mountain-divider">
-    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="width: 100%; height: 50px; fill: var(--color-bg-light); display: block;">
-      <path d="M0,0 C150,90 350,-40 500,50 C650,140 900,10 1200,40 L1200,120 L0,120 Z"></path>
-    </svg>
-  </div>
-
-  <!-- Featured Notice / Banner -->
-  <section class="section" style="padding-top: 1rem; padding-bottom: 3rem;">
+  <!-- Hero Section (Kamiyama / Musu-Sauna Asymmetric Style) -->
+  <section class="hero-wrapper">
+    <div class="hero-bg-text">UCHINARI</div>
     <div class="container">
-      <div class="event-featured-box fade-in" style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color: #fff; padding: var(--spacing-lg); border-radius: var(--radius-lg); display: flex; flex-direction: column; md:flex-direction: row; align-items: center; justify-content: space-between; gap: 1.5rem; box-shadow: var(--shadow-md);">
-        <div>
-          <span style="background: var(--color-accent); color: #fff; padding: 0.3rem 0.8rem; border-radius: var(--radius-pill); font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 0.5rem;">次回注目イベント</span>
-          <h2 style="font-size: 1.6rem; color: #fff; margin-bottom: 0.5rem;">10/24(金) 竹あかりを作ろう ご飯イベ！！</h2>
-          <p style="opacity: 0.9;">自分だけの竹あかりをクラフトし、美味しい地元の竹スープご飯をみんなで味わう体験型イベント。初心者・APU生大歓迎！</p>
+      <div class="hero-asymmetric-grid">
+        <div class="hero-text-block reveal-fade-up">
+          <span class="hero-tag">BEPPU × ASOBI LAB × APU</span>
+          <h1 class="hero-heading">
+            竹から、棚田の<br>
+            <span class="highlight">未来を灯す。</span>
+          </h1>
+          <p class="hero-lead">
+            大分県別府市・内成棚田。千年の石垣と美しい稲穂を守るため、放置竹林を「地域の楽しさと感動」へと生まれ変わらせる新しい挑戦。
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="events.html" class="btn-custom btn-amber">10/24 イベント参加受付中</a>
+            <a href="bamboo.html" class="btn-custom btn-outline">竹林再生の取り組み</a>
+          </div>
         </div>
-        <a href="events.html" class="btn btn-accent" style="white-space: nowrap;">詳細・参加申込</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Uchinari Stats Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-title-wrap fade-in">
-        <span class="section-subtitle">NUMBERS OF UCHINARI</span>
-        <h2 class="section-title">数字で知る内成棚田</h2>
-        <p class="section-desc">日本の棚田百選にも選ばれた圧巻のスケールと、私たちが直面している現実。</p>
-      </div>
-
-      <div class="grid-4">
-        <div class="stat-card fade-in fade-in-delay-1">
-          <div class="stat-number" data-target="1300">0</div>
-          <div class="stat-label">総枚数（枚）</div>
-          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem;">室町〜江戸時代から受け継がれた石垣棚田</p>
-        </div>
-        <div class="stat-card fade-in fade-in-delay-2" style="border-top-color: var(--color-accent);">
-          <div class="stat-number" data-target="650" style="color: var(--color-accent);">0</div>
-          <div class="stat-label">現在稼働している棚田（枚）</div>
-          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem;">高齢化により約半数が休耕地に</p>
-        </div>
-        <div class="stat-card fade-in fade-in-delay-3">
-          <div class="stat-number" data-target="150">0</div>
-          <div class="stat-label">標高差（m）</div>
-          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem;">標高150mから300mに広がるダイナミックな景観</p>
-        </div>
-        <div class="stat-card fade-in fade-in-delay-4">
-          <div class="stat-number" data-target="42">0</div>
-          <div class="stat-label">全体の広さ（ha）</div>
-          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem;">すり鉢状の山肌を覆う黄金の階段</p>
+        <div class="hero-visual-frame reveal-fade-up delay-2">
+          <div class="hero-image-box reveal-mask-box">
+            <img src="images/seasons/autumn.png" alt="内成棚田の黄金色の絶景">
+          </div>
+          <!-- Rotating Stamp Badge -->
+          <div class="rotating-badge">
+            <svg viewBox="0 0 100 100">
+              <path id="textPath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+              <text font-size="9" font-family="'Zen Maru Gothic', sans-serif" font-weight="700" fill="#1C3018" letter-spacing="2">
+                <textPath href="#textPath">FAB PROJECT • UCHINARI TANADA •</textPath>
+              </text>
+            </svg>
+            <span class="badge-center-icon">🌾</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Problem & Solution Concept Section -->
-  <section class="section" style="background-color: var(--color-bg-light);">
+  <!-- Featured Notice Banner (10/24 Event) -->
+  <section class="container featured-event-banner reveal-fade-up">
+    <div class="banner-card">
+      <div>
+        <span class="banner-date-tag">次回注目イベント • 10/24 (金) 開催</span>
+        <h2 class="banner-title">竹あかりを作ろう ご飯イベ！！</h2>
+        <p class="banner-desc">
+          放置竹林から切り出した竹で自分だけの竹あかり（竹灯籠）をクラフト。作業の後は地元の味覚をみんなで楽しむご飯会を開催！初心者・APU生・地域の方どなたでも大歓迎です。
+        </p>
+        <a href="#" class="btn-custom btn-amber" data-modal-target="modal-1024">詳細・参加申し込む</a>
+      </div>
+      <div style="position: relative;">
+        <img src="images/bamboo/lanterns.png" alt="竹あかりの幻想的な光" style="width: 100%; border-radius: 2px; box-shadow: var(--shadow-subtle);">
+      </div>
+    </div>
+  </section>
+
+  <!-- Numbers & Reality Section -->
+  <section class="section-padding">
     <div class="container">
-      <div class="grid-2" style="align-items: center;">
-        <div class="fade-in">
-          <span class="section-subtitle">PROJECT CONCEPT</span>
-          <h2 class="section-title">放置竹林の「困りごと」を<br>地域の「アソビ」に変える</h2>
-          <p style="margin-bottom: 1.2rem;">棚田の周辺で猛繁殖する竹林は、日光を遮り、根を張り巡らせて石垣を侵食する「脅威」となっていました。</p>
-          <p style="margin-bottom: 1.5rem;">そこで別府の地域団体**アソビLAB**と**APU（立命館アジア太平洋大学）**の学生がタッグを組み、竹を刈り取り、竹あかり・ベンチ・クラフト「たけっと」として再利用する循環型プロジェクトを発足しました。</p>
-          <a href="bamboo.html" class="btn btn-primary">竹林再生活動の仕組みを読む</a>
+      <div class="section-header-wrap reveal-fade-up">
+        <span class="section-num">01 / REALITY</span>
+        <h2 class="section-main-title">数字で見る内成棚田と現実</h2>
+        <p class="section-desc-lead">室町・江戸時代から続く日本の棚田百選の美しさと、直面している課題。</p>
+      </div>
+
+      <div class="stats-asymmetric-flex reveal-fade-up delay-1">
+        <div class="stat-item-box">
+          <div class="stat-val" data-target="1300">0</div>
+          <div class="stat-lbl">受け継がれた棚田（枚）</div>
+          <p class="stat-sub-text">すり鉢状の山肌に手作業で築かれた膨大な石垣棚田</p>
         </div>
-        <div class="fade-in fade-in-delay-2">
-          <img src="images/bamboo/lanterns.png" alt="竹あかりの温かい光" style="width:100%; border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+
+        <div class="stat-item-box accent-border">
+          <div class="stat-val accent" data-target="650">0</div>
+          <div class="stat-lbl">現在作付け中の棚田（枚）</div>
+          <p class="stat-sub-text">高齢化により、かつての約半分が休耕地・過疎化の危機に</p>
+        </div>
+
+        <div class="stat-item-box">
+          <div class="stat-val" data-target="150">0</div>
+          <div class="stat-lbl">標高差（m）</div>
+          <p class="stat-sub-text">標高150mから300mにわたって展開する絶景のグラデーション</p>
+        </div>
+
+        <div class="stat-item-box">
+          <div class="stat-val" data-target="42">0</div>
+          <div class="stat-lbl">全体の広さ（ha）</div>
+          <p class="stat-sub-text">別府の山懐に抱かれたダイナミックな自然環境</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Upcoming Events Overview Section -->
-  <section class="section">
+  <!-- Concept & Overlap Section (Musu-Sauna Style) -->
+  <section class="section-padding" style="background-color: #F0EDE6;">
     <div class="container">
-      <div class="section-title-wrap fade-in">
-        <span class="section-subtitle">ACTIVITIES & SCHEDULE</span>
-        <h2 class="section-title">今後の活動・イベント予定</h2>
-        <p class="section-desc">竹あかり作り、ブランコ作成、ツアー実行、竹炭ワークショップなど盛りだくさん！</p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card fade-in fade-in-delay-1">
-          <div class="card-body">
-            <span style="color: var(--color-accent); font-weight: 700; font-size: 0.9rem;">10.24 (金)</span>
-            <h3 style="font-size: 1.2rem; margin: 0.5rem 0;">竹あかりを作ろう ご飯イベ！！</h3>
-            <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 1rem;">放置竹林から切り出した竹で幻想的な竹あかりをクラフト。作業後は地元の味覚をみんなで楽しむご飯会！</p>
-            <a href="events.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 1rem;">詳細を見る</a>
-          </div>
+      <div class="overlap-grid">
+        <div class="overlap-image-wrapper reveal-fade-up">
+          <img src="images/bamboo/lanterns.png" alt="竹あかり" class="overlap-img-main">
+          <img src="images/seasons/spring.png" alt="水鏡の棚田" class="overlap-img-sub">
         </div>
 
-        <div class="card fade-in fade-in-delay-2">
-          <div class="card-body">
-            <span style="color: var(--color-accent); font-weight: 700; font-size: 0.9rem;">10.25 (土)</span>
-            <h3 style="font-size: 1.2rem; margin: 0.5rem 0;">竹ブランコを作ろう</h3>
-            <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 1rem;">棚田の自然の中に、竹で作る手作り大型ブランコを制作。大人も子どもも夢中になれるアソビの場づくり。</p>
-            <a href="events.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 1rem;">詳細を見る</a>
-          </div>
+        <div class="overlap-content reveal-fade-up delay-1">
+          <span class="section-num">02 / MISSION</span>
+          <h2 class="section-main-title" style="margin-bottom: 1.5rem;">
+            放置竹林の困りごとを<br>「アソビ」の場へ
+          </h2>
+          <p style="margin-bottom: 1.2rem; color: var(--color-text-sub);">
+            棚田の周りで猛繁殖する竹林は、日光を遮り、根が石垣を浸食する脅威となっていました。
+          </p>
+          <p style="margin-bottom: 1.8rem; color: var(--color-text-sub);">
+            そこで別府の地域団体**アソビLAB**と**APU（立命館アジア太平洋大学）**の学生チームが立ち上がり、竹を伐採・加工して「竹あかり」「竹ブランコ」「たけっと（竹ラケット）」「竹炭」へと再生する循環モデルをスタートしました。
+          </p>
+          <a href="bamboo.html" class="btn-custom btn-primary-dark">竹林再生活動の仕組みを読む</a>
         </div>
-
-        <div class="card fade-in fade-in-delay-3">
-          <div class="card-body">
-            <span style="color: var(--color-accent); font-weight: 700; font-size: 0.9rem;">10.28 (火)</span>
-            <h3 style="font-size: 1.2rem; margin: 0.5rem 0;">竹あかり特別展示</h3>
-            <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 1rem;">ワークショップで制作した作品を一堂に点灯。秋の夜長に内成の棚田をやさしい光で包み込みます。</p>
-            <a href="events.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 1rem;">詳細を見る</a>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 2.5rem;" class="fade-in">
-        <a href="events.html" class="btn btn-primary">すべてのイベント予定を見る（全9回）</a>
       </div>
     </div>
   </section>
 
-  <!-- Instagram Section -->
-  <section class="section" style="background: var(--color-bg-light);">
+  <!-- Upcoming Schedule Preview Section (Only 100% Real Dates) -->
+  <section class="section-padding">
     <div class="container">
-      <div class="section-title-wrap fade-in">
-        <span class="section-subtitle">INSTAGRAM</span>
-        <h2 class="section-title">公式インスタグラムで発信中！</h2>
-        <p class="section-desc">内成棚田の日常や、作業の裏側、季節の絶景をリアルタイムでお届けしています。</p>
+      <div class="section-header-wrap reveal-fade-up">
+        <span class="section-num">03 / SCHEDULE</span>
+        <h2 class="section-main-title">直近の活動・イベント予定</h2>
+        <p class="section-desc-lead">アソビLAB × APU生が開催する内成棚田での体験イベント。</p>
       </div>
 
-      <div class="grid-3 fade-in" style="margin-bottom: 2rem;">
-        <div style="background: #fff; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
-          <img src="images/seasons/autumn.png" alt="内成棚田公式Instagram投稿" style="width: 100%; height: 220px; object-fit: cover;">
-          <div style="padding: 1rem;">
-            <p style="font-size: 0.85rem; color: var(--color-text-muted);">黄金色の季節が始まりました！収穫間近の稲穂と彼岸花のコントラスト🌾</p>
+      <div class="events-clean-list reveal-fade-up delay-1">
+        
+        <!-- 10/24 -->
+        <div class="event-row-card highlight-row">
+          <div class="event-date-badge">10/24 (金)</div>
+          <div>
+            <h3 class="event-title-main">竹あかりを作ろう ご飯イベ！！</h3>
+            <p class="event-desc-sub">竹あかりクラフトと、美味しい地元のご飯をみんなで囲む交流イベント。</p>
+          </div>
+          <div style="text-align: right;">
+            <a href="#" class="btn-custom btn-amber" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;" data-modal-target="modal-1024">参加申込</a>
           </div>
         </div>
-        <div style="background: #fff; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
-          <img src="images/bamboo/lanterns.png" alt="内成棚田公式Instagram投稿" style="width: 100%; height: 220px; object-fit: cover;">
-          <div style="padding: 1rem;">
-            <p style="font-size: 0.85rem; color: var(--color-text-muted);">竹あかりワークショップの試作品が完成！幻想的な明かりが灯ります✨</p>
+
+        <!-- 10/25 -->
+        <div class="event-row-card">
+          <div class="event-date-badge">10/25 (土)</div>
+          <div>
+            <h3 class="event-title-main">ブランコを作ろう</h3>
+            <p class="event-desc-sub">棚田を見下ろす高台に、丈夫な手作り竹ブランコを制作します。</p>
+          </div>
+          <div style="text-align: right;">
+            <a href="events.html" class="btn-custom btn-outline" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">詳細</a>
           </div>
         </div>
-        <div style="background: #fff; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
-          <img src="images/seasons/spring.png" alt="内成棚田公式Instagram投稿" style="width: 100%; height: 220px; object-fit: cover;">
-          <div style="padding: 1rem;">
-            <p style="font-size: 0.85rem; color: var(--color-text-muted);">水鏡が輝く春の内成。朝もやに包まれた棚田の景色は神秘的です。</p>
+
+        <!-- 10/28 -->
+        <div class="event-row-card">
+          <div class="event-date-badge">10/28 (火)</div>
+          <div>
+            <h3 class="event-title-main">竹あかり展示</h3>
+            <p class="event-desc-sub">制作した竹あかりを一堂に点灯。秋の棚田をやさしく照らします。</p>
+          </div>
+          <div style="text-align: right;">
+            <a href="events.html" class="btn-custom btn-outline" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">詳細</a>
           </div>
         </div>
+
       </div>
 
-      <div style="text-align: center;" class="fade-in">
-        <a href="https://www.instagram.com/wassyoi_utinaritanada/" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      <div style="text-align: center; margin-top: 3rem;" class="reveal-fade-up">
+        <a href="events.html" class="btn-custom btn-primary-dark">すべてのイベント予定を見る（全9回）</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Feed Section -->
+  <section class="section-padding" style="background-color: var(--color-bg-white);">
+    <div class="container">
+      <div class="section-header-wrap text-center reveal-fade-up" style="text-align: center;">
+        <span class="section-num">INSTAGRAM</span>
+        <h2 class="section-main-title">公式インスタグラム</h2>
+        <p class="section-desc-lead" style="margin-left: auto; margin-right: auto;">内成棚田の四季の移ろいと、活動の日常を発信中。</p>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;" class="reveal-fade-up">
+        <a href="https://www.instagram.com/wassyoi_utinaritanada/" target="_blank" rel="noopener noreferrer" class="btn-custom btn-amber" style="display: inline-flex; align-items: center; gap: 0.6rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
           @wassyoi_utinaritanada をフォローする
         </a>
       </div>
     </div>
   </section>
 
+  <!-- Modal Dialog for 10/24 Event -->
+  <div class="modal-backdrop" id="modal-1024">
+    <div class="modal-content-card">
+      <button class="modal-close-button">&times;</button>
+      <span style="color: var(--color-accent-amber); font-weight: 700; font-family: var(--font-sans); font-size: 0.85rem;">EVENT JOIN</span>
+      <h3 style="font-size: 1.5rem; margin: 0.5rem 0 1rem; color: var(--color-bg-green);">10/24(金) 竹あかりを作ろう ご飯イベ！！</h3>
+      <p style="font-size: 0.95rem; color: var(--color-text-sub); margin-bottom: 1.5rem; line-height: 1.8;">
+        イベントへのご参加・お問合せは公式InstagramのDM、またはお問合せフォームより気軽にご連絡ください！
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+        <a href="https://www.instagram.com/wassyoi_utinaritanada/" target="_blank" rel="noopener noreferrer" class="btn-custom btn-amber" style="text-align: center;">
+          Instagram DMで申し込む
+        </a>
+        <a href="contact.html" class="btn-custom btn-outline" style="text-align: center;">
+          WEBお問い合わせフォーム
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top-grid">
         <div>
-          <h3 class="footer-title">FAB — Forest Abandoned Bamboo</h3>
-          <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">
-            大分県別府市・内成棚田の美しい景観を守り、放置竹林を地域の楽しさと感動へと還元するプロジェクト。
+          <div class="footer-brand">FAB</div>
+          <p style="font-size: 0.9rem; opacity: 0.8; max-width: 400px; line-height: 1.8;">
+            大分県別府市・内成棚田の景観保全と、放置竹林の資源化に取り組むプロジェクト。
           </p>
-          <p style="font-size: 0.85rem; opacity: 0.7;">運営: アソビLAB × APU（立命館アジア太平洋大学）学生サポートチーム</p>
+          <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 1rem;">運営: アソビLAB × APU（立命館アジア太平洋大学）学生チーム</p>
         </div>
         <div>
-          <h4 style="color: #fff; margin-bottom: 1rem;">ページ一覧</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">ホーム</a></li>
+          <h4 style="font-family: var(--font-sans); font-size: 0.95rem; color: #fff; margin-bottom: 1.2rem;">NAVIGATION</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">TOP</a></li>
             <li><a href="about.html">内成棚田とは</a></li>
             <li><a href="bamboo.html">竹林再生活動</a></li>
             <li><a href="events.html">イベント予定</a></li>
@@ -238,14 +272,13 @@
           </ul>
         </div>
         <div>
-          <h4 style="color: #fff; margin-bottom: 1rem;">公式SNS</h4>
-          <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">内成棚田の魅力をInstagramで発信中！ぜひフォローしてください。</p>
-          <a href="https://www.instagram.com/wassyoi_utinaritanada/" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent-light); font-weight: 700; text-decoration: underline;">
+          <h4 style="font-family: var(--font-sans); font-size: 0.95rem; color: #fff; margin-bottom: 1.2rem;">OFFICIAL SNS</h4>
+          <a href="https://www.instagram.com/wassyoi_utinaritanada/" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent-amber); font-family: var(--font-sans); font-weight: 700;">
             @wassyoi_utinaritanada
           </a>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-copy">
         &copy; 2026 FAB — Forest Abandoned Bamboo / 内成棚田再生プロジェクト All Rights Reserved.
       </div>
     </div>

@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お問い合わせ | FAB - Forest Abandoned Bamboo</title>
-  <meta name="description" content="FAB（内成棚田×アソビLAB×APU生）へのお問い合わせ・イベント参加申込・ボランティア参加のご相談フォーム。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>お問い合わせ | FAB — Forest Abandoned Bamboo</title>
+  <meta name="description" content="内成棚田・アソビLAB × APU生プロジェクトへのお問い合わせ、イベント参加申込、取材・視察のご連絡フォーム。">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -22,15 +19,15 @@
         <span class="logo-main">FAB</span>
         <span class="logo-sub">Forest Abandoned Bamboo</span>
       </a>
-      <button class="hamburger" aria-label="メニューを開く">
+      <button class="hamburger" aria-label="メニュー">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <nav class="site-nav">
         <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="about.html">内成棚田とは</a></li>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="about.html">内成棚田</a></li>
           <li><a href="bamboo.html">竹林再生活動</a></li>
           <li><a href="events.html">イベント予定</a></li>
           <li><a href="access.html">アクセス</a></li>
@@ -40,97 +37,85 @@
     </div>
   </header>
 
-  <!-- Page Title Banner -->
-  <section class="page-header" style="background-image: linear-gradient(rgba(15,35,15,0.8), rgba(15,35,15,0.8)), url('images/bamboo/lanterns.png'); background-size: cover; background-position: center; padding: 6rem 0 4rem; color: #fff; text-align: center;">
-    <div class="container fade-in">
-      <span style="letter-spacing: 0.15em; font-size: 0.9rem; opacity: 0.85;">CONTACT & JOIN US</span>
-      <h1 style="font-size: 2.5rem; margin-top: 0.5rem; color: #fff;">お問い合わせ・仲間募集</h1>
-      <p style="margin-top: 1rem; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">
-        イベントの参加希望、ボランティアへの興味、取材・見学のお問い合わせはこちらから。
-      </p>
+  <!-- Subpage Header -->
+  <section class="section-padding" style="padding-top: 10rem; padding-bottom: 4rem; background-color: var(--color-bg-paper);">
+    <div class="container text-center" style="text-align: center;">
+      <span class="section-num">CONTACT & JOIN</span>
+      <h1 class="section-main-title" style="font-size: clamp(2.4rem, 5vw, 3.8rem);">お問い合わせ</h1>
+      <p class="section-desc-lead" style="margin: 1rem auto 0;">イベントの事前申し込み、ボランティア参加、取材のご相談はこちらから。</p>
     </div>
   </section>
 
   <!-- Contact Form & Info Section -->
-  <section class="section">
+  <section class="section-padding">
     <div class="container">
-      <div class="grid-2" style="gap: 3rem;">
+      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem;" class="reveal-fade-up">
         
-        <!-- Left: Contact Form -->
-        <div class="fade-in">
-          <div style="background: #fff; padding: 2.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
-            <h2 style="font-size: 1.6rem; margin-bottom: 1.5rem; color: var(--color-primary-dark);">メッセージを送る</h2>
-            
-            <form id="contact-form" onsubmit="event.preventDefault(); alert('お問い合わせありがとうございます！内容を確認の上、担当者よりご連絡いたします。');">
-              <div style="margin-bottom: 1.2rem;">
-                <label for="name" style="display: block; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.9rem;">お名前 <span style="color: red;">*</span></label>
-                <input type="text" id="name" required placeholder="例：山田 太郎" style="width: 100%; padding: 0.8rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: 1rem;">
-              </div>
+        <!-- Form -->
+        <div style="background-color: var(--color-bg-white); padding: 3.5rem; box-shadow: var(--shadow-subtle);">
+          <h2 style="font-size: 1.6rem; color: var(--color-bg-green); margin-bottom: 2rem;">メッセージを送信</h2>
+          
+          <form onsubmit="event.preventDefault(); alert('お問い合わせありがとうございます！担当者よりご連絡いたします。');">
+            <div style="margin-bottom: 1.5rem;">
+              <label for="name" style="display: block; font-family: var(--font-sans); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">お名前 <span style="color: var(--color-accent-amber);">*</span></label>
+              <input type="text" id="name" required placeholder="例：山田 太郎" style="width: 100%; padding: 0.9rem; border: 1px solid var(--border-subtle); border-radius: 2px; font-family: var(--font-serif); font-size: 1rem; background-color: var(--color-bg-paper);">
+            </div>
 
-              <div style="margin-bottom: 1.2rem;">
-                <label for="email" style="display: block; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.9rem;">メールアドレス <span style="color: red;">*</span></label>
-                <input type="email" id="email" required placeholder="例：name@example.com" style="width: 100%; padding: 0.8rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: 1rem;">
-              </div>
+            <div style="margin-bottom: 1.5rem;">
+              <label for="email" style="display: block; font-family: var(--font-sans); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">メールアドレス <span style="color: var(--color-accent-amber);">*</span></label>
+              <input type="email" id="email" required placeholder="例：name@example.com" style="width: 100%; padding: 0.9rem; border: 1px solid var(--border-subtle); border-radius: 2px; font-family: var(--font-serif); font-size: 1rem; background-color: var(--color-bg-paper);">
+            </div>
 
-              <div style="margin-bottom: 1.2rem;">
-                <label for="category" style="display: block; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.9rem;">お問い合わせ種別 <span style="color: red;">*</span></label>
-                <select id="category" required style="width: 100%; padding: 0.8rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: 1rem; background: #fff;">
-                  <option value="">選択してください</option>
-                  <option value="10/24イベント">10/24 竹あかり・ご飯イベント参加</option>
-                  <option value="その他イベント">その他イベントのお申し込み</option>
-                  <option value="ボランティア">竹林伐採・ボランティア参加希望</option>
-                  <option value="取材・視察">取材・メディア・視察について</option>
-                  <option value="その他">その他のお問い合わせ</option>
-                </select>
-              </div>
+            <div style="margin-bottom: 1.5rem;">
+              <label for="category" style="display: block; font-family: var(--font-sans); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">お問い合わせ種別 <span style="color: var(--color-accent-amber);">*</span></label>
+              <select id="category" required style="width: 100%; padding: 0.9rem; border: 1px solid var(--border-subtle); border-radius: 2px; font-family: var(--font-serif); font-size: 1rem; background-color: var(--color-bg-paper);">
+                <option value="">選択してください</option>
+                <option value="10/24イベント">10/24 竹あかり・ご飯イベント参加</option>
+                <option value="その他イベント">その他イベントのお申し込み</option>
+                <option value="ボランティア">竹林伐採・ボランティア参加希望</option>
+                <option value="取材・視察">取材・メディア・視察について</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
 
-              <div style="margin-bottom: 1.5rem;">
-                <label for="message" style="display: block; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.9rem;">メッセージ本文 <span style="color: red;">*</span></label>
-                <textarea id="message" rows="5" required placeholder="ご質問や参加ご希望の人数などをご記入ください。" style="width: 100%; padding: 0.8rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: 1rem; resize: vertical;"></textarea>
-              </div>
+            <div style="margin-bottom: 2rem;">
+              <label for="message" style="display: block; font-family: var(--font-sans); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">メッセージ本文 <span style="color: var(--color-accent-amber);">*</span></label>
+              <textarea id="message" rows="5" required placeholder="ご質問や参加ご希望の人数などをご記入ください。" style="width: 100%; padding: 0.9rem; border: 1px solid var(--border-subtle); border-radius: 2px; font-family: var(--font-serif); font-size: 1rem; background-color: var(--color-bg-paper); resize: vertical;"></textarea>
+            </div>
 
-              <button type="submit" class="btn btn-accent" style="width: 100%; padding: 1rem; font-size: 1.05rem;">送信する</button>
-            </form>
-          </div>
+            <button type="submit" class="btn-custom btn-amber" style="width: 100%; padding: 1.1rem;">送信する</button>
+          </form>
         </div>
 
-        <!-- Right: Social & Quick Info -->
-        <div class="fade-in fade-in-delay-2">
-          
-          <!-- Instagram Card -->
-          <div style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color: #fff; padding: 2rem; border-radius: var(--radius-md); margin-bottom: 2rem; box-shadow: var(--shadow-md);">
-            <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: var(--radius-pill); font-size: 0.8rem; font-weight: 700;">INSTAGRAM DM</span>
-            <h3 style="font-size: 1.4rem; color: #fff; margin: 0.8rem 0 0.5rem;">Instagramでのご連格がスムーズです！</h3>
-            <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 1.5rem;">
-              内成棚田公式Instagramアカウント（@wassyoi_utinaritanada）へのダイレクトメッセージ（DM）でも、イベント参加のお申込みや質問を随時受け付けています。
+        <!-- Social & FAQ -->
+        <div>
+          <!-- Instagram Banner -->
+          <div style="background-color: var(--color-bg-green); color: var(--color-text-light); padding: 2.5rem; margin-bottom: 2.5rem;">
+            <span style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; color: var(--color-accent-amber);">INSTAGRAM DM</span>
+            <h3 style="font-size: 1.4rem; color: #fff; margin: 0.5rem 0 1rem;">InstagramのDMがスムーズです！</h3>
+            <p style="font-size: 0.9rem; opacity: 0.85; line-height: 1.8; margin-bottom: 1.5rem;">
+              公式Instagram（@wassyoi_utinaritanada）のダイレクトメッセージでもご質問や参加お申し込みを随時受付中！
             </p>
-            <a href="https://www.instagram.com/wassyoi_utinaritanada/" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <a href="https://www.instagram.com/wassyoi_utinaritanada/" target="_blank" rel="noopener noreferrer" class="btn-custom btn-amber" style="display: inline-flex; align-items: center; gap: 0.5rem;">
               Instagramを開く
             </a>
           </div>
 
-          <!-- FAQ Card -->
-          <div style="background: #fff; padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
-            <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--color-primary-dark);">よくあるご質問</h3>
+          <!-- FAQ -->
+          <div style="background-color: var(--color-bg-white); padding: 2.5rem;">
+            <h3 style="font-size: 1.2rem; color: var(--color-bg-green); margin-bottom: 1.5rem;">よくあるご質問</h3>
             
             <div style="margin-bottom: 1.2rem;">
-              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-accent);">Q. APU学生以外でもイベントに参加できますか？</h4>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.2rem;">A. もちろんです！地域の方、観光客、他大学の学生さんなど、どなたでも大歓迎です。</p>
-            </div>
-
-            <div style="margin-bottom: 1.2rem;">
-              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-accent);">Q. 竹刈りやクラフトの道具は持参が必要ですか？</h4>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.2rem;">A. ノコギリやドリル等の専門道具はこちらでご用意します。汚れても良い動きやすい服装・靴でお越しください。</p>
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-accent-amber);">Q. 学生以外もイベントに参加できますか？</h4>
+              <p style="font-size: 0.85rem; color: var(--color-text-sub); margin-top: 0.3rem;">A. 地域の方、他大学の学生さん、観光客の方どなたでも大歓迎です！</p>
             </div>
 
             <div>
-              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-accent);">Q. 雨天の場合はどうなりますか？</h4>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.2rem;">A. 小雨決行ですが、荒天の場合は延期または内容変更となります。前日までにInstagram等でご案内します。</p>
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-accent-amber);">Q. 道具の持参は必要ですか？</h4>
+              <p style="font-size: 0.85rem; color: var(--color-text-sub); margin-top: 0.3rem;">A. ノコギリやドリル等の道具はこちらで準備いたします。動きやすい服装でお越しください。</p>
             </div>
 
           </div>
-
         </div>
 
       </div>
@@ -140,18 +125,18 @@
   <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top-grid">
         <div>
-          <h3 class="footer-title">FAB — Forest Abandoned Bamboo</h3>
-          <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">
-            大分県別府市・内成棚田の美しい景観を守り、放置竹林を地域の楽しさと感動へと還元するプロジェクト。
+          <div class="footer-brand">FAB</div>
+          <p style="font-size: 0.9rem; opacity: 0.8; max-width: 400px; line-height: 1.8;">
+            大分県別府市・内成棚田の景観保全と、放置竹林の資源化に取り組むプロジェクト。
           </p>
-          <p style="font-size: 0.85rem; opacity: 0.7;">運営: アソビLAB × APU（立命館アジア太平洋大学）学生サポートチーム</p>
+          <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 1rem;">運営: アソビLAB × APU（立命館アジア太平洋大学）学生チーム</p>
         </div>
         <div>
-          <h4 style="color: #fff; margin-bottom: 1rem;">ページ一覧</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">ホーム</a></li>
+          <h4 style="font-family: var(--font-sans); font-size: 0.95rem; color: #fff; margin-bottom: 1.2rem;">NAVIGATION</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">TOP</a></li>
             <li><a href="about.html">内成棚田とは</a></li>
             <li><a href="bamboo.html">竹林再生活動</a></li>
             <li><a href="events.html">イベント予定</a></li>
@@ -160,18 +145,17 @@
           </ul>
         </div>
         <div>
-          <h4 style="color: #fff; margin-bottom: 1rem;">公式SNS</h4>
-          <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">内成棚田の魅力をInstagramで発信中！ぜひフォローしてください。</p>
-          <a href="https://www.instagram.com/wassyoi_utinaritanada/" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent-light); font-weight: 700; text-decoration: underline;">
+          <h4 style="font-family: var(--font-sans); font-size: 0.95rem; color: #fff; margin-bottom: 1.2rem;">OFFICIAL SNS</h4>
+          <a href="https://www.instagram.com/wassyoi_utinaritanada/" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent-amber); font-family: var(--font-sans); font-weight: 700;">
             @wassyoi_utinaritanada
           </a>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-copy">
         &copy; 2026 FAB — Forest Abandoned Bamboo / 内成棚田再生プロジェクト All Rights Reserved.
       </div>
     </div>
-  </footer>
+  </header>
 
   <script src="js/main.js"></script>
 </body>
