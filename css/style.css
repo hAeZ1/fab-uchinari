@@ -1,12 +1,10 @@
 /* ============================================
-   FAB — Forest Abandoned Bamboo
+   ふぁぶ — Forest Abandoned Bamboo
    Authentic Japanese Minimal Aesthetics
-   Directly Inspired by Bleston Court & Luma
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Shippori+Mincho:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Shippori+Mincho:wght@400;500;600;700&display=swap');
 
-/* --- Design Tokens --- */
 :root {
   --font-serif-jp: 'Shippori Mincho', serif;
   --font-serif-en: 'Cormorant Garamond', serif;
@@ -30,7 +28,6 @@
   --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Base Reset & Typography */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -68,7 +65,6 @@ img {
   display: block;
 }
 
-/* Layout Utilities */
 .container {
   width: 86%;
   max-width: 1140px;
@@ -77,30 +73,30 @@ img {
 }
 
 .section-padding {
-  padding: 10rem 0;
+  padding: 9rem 0;
 }
 
 @media (max-width: 768px) {
   .section-padding {
-    padding: 5.5rem 0;
+    padding: 5rem 0;
   }
 }
 
-/* --- Site Header --- */
+/* Header */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 2.5rem 0;
+  padding: 2.2rem 0;
   transition: all 0.4s var(--transition-smooth);
 }
 
 .site-header.scrolled {
   background-color: rgba(245, 242, 236, 0.96);
   backdrop-filter: blur(8px);
-  padding: 1.4rem 0;
+  padding: 1.2rem 0;
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -119,17 +115,17 @@ img {
 }
 
 .logo-main {
-  font-family: var(--font-serif-en);
-  font-weight: 400;
-  font-size: 1.9rem;
-  letter-spacing: 0.2em;
+  font-family: var(--font-serif-jp);
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.15em;
   color: var(--color-accent-green);
   line-height: 1;
 }
 
 .logo-sub {
-  font-family: var(--font-serif-jp);
-  font-size: 0.68rem;
+  font-family: var(--font-serif-en);
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   color: var(--color-text-sub);
   margin-top: 0.35rem;
@@ -187,10 +183,10 @@ img {
   background-color: var(--color-text-main);
 }
 
-/* --- Hero Section --- */
+/* Hero */
 .hero-wrapper {
   position: relative;
-  min-height: 94vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   padding-top: 7rem;
@@ -224,7 +220,7 @@ img {
 
 .hero-heading {
   font-size: clamp(2rem, 3.8vw, 3.2rem);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: var(--color-accent-green);
   margin-bottom: 2.2rem;
@@ -257,11 +253,7 @@ img {
   transition: transform 1.6s var(--transition-smooth);
 }
 
-.hero-image-box:hover img {
-  transform: scale(1.025);
-}
-
-/* --- Featured Notice Banner (10/24 Event) --- */
+/* Banner */
 .featured-event-banner {
   margin-top: -1.5rem;
   position: relative;
@@ -299,7 +291,7 @@ img {
 
 .banner-title {
   font-size: clamp(1.4rem, 2.4vw, 2rem);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--color-accent-green);
   line-height: 1.45;
   margin-bottom: 1.2rem;
@@ -312,7 +304,7 @@ img {
   margin-bottom: 2rem;
 }
 
-/* --- Section Headings --- */
+/* Headings */
 .section-header-wrap {
   margin-bottom: 4.5rem;
 }
@@ -329,7 +321,7 @@ img {
 
 .section-main-title {
   font-size: clamp(1.8rem, 2.8vw, 2.5rem);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--color-accent-green);
   line-height: 1.4;
 }
@@ -341,7 +333,7 @@ img {
   max-width: 600px;
 }
 
-/* --- Overlap & Authentic Section --- */
+/* Overlap Grid */
 .overlap-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -381,7 +373,7 @@ img {
   .overlap-img-sub { display: none; }
 }
 
-/* --- Stats Display --- */
+/* Stats */
 .stats-flex-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -429,7 +421,7 @@ img {
   line-height: 1.7;
 }
 
-/* --- Event Schedule List --- */
+/* Events */
 .events-clean-list {
   display: flex;
   flex-direction: column;
@@ -483,7 +475,7 @@ img {
   color: var(--color-text-sub);
 }
 
-/* --- Custom Buttons --- */
+/* Buttons */
 .btn-custom {
   display: inline-flex;
   align-items: center;
@@ -526,7 +518,7 @@ img {
   color: var(--color-text-light);
 }
 
-/* --- Footer --- */
+/* Footer */
 .site-footer {
   background-color: var(--color-bg-dark);
   color: var(--color-text-light);
@@ -551,8 +543,8 @@ img {
 }
 
 .footer-brand {
-  font-family: var(--font-serif-en);
-  font-size: 1.9rem;
+  font-family: var(--font-serif-jp);
+  font-size: 1.8rem;
   letter-spacing: 0.15em;
   color: #fff;
   margin-bottom: 1rem;
