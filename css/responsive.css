@@ -1,0 +1,70 @@
+/* ============================================
+   FAB — Forest Abandoned Bamboo
+   Responsive Stylesheet
+   ============================================ */
+
+/* Mobile First Adjustments */
+@media (max-width: 768px) {
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-md);
+  }
+
+  .site-nav.is-active {
+    display: block;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .cta-box {
+    padding: var(--spacing-md);
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-marker {
+    left: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-3, .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
